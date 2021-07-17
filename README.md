@@ -10,6 +10,20 @@ $ cd laravel-api
 
 # update dependencies
 $ composer update
+
+# rename .env.example to .env
+# change:
+#   DB_DATABASE=dbname 
+#   DB_USERNAME=dbuser 
+#   DB_PASSWORD=dbpassword
+$ php artisan key:generate
+
+# migrate database
+$ php artisan migrate
+$ php artisan db:seed
+
+# run application in local
+$ php artisan serve
 ```
 
 

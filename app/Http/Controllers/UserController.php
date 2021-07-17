@@ -32,7 +32,7 @@ class UserController extends Controller
                     ]
                 ];
                 
-                return response()->json(['error' => 0, 'data' => $data], 200);
+                return response()->json(['error' => 0, 'message' => '', 'data' => $data], 200);
             } else {
                 return response()->json(['error' => 1, 'message' => 'invalid credentials'], 400);
             }
