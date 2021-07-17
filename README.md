@@ -24,6 +24,9 @@ $ php artisan db:seed
 
 # run application in local
 $ php artisan serve
+
+# run testing in local
+$ composer test
 ```
 
 
